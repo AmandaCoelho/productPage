@@ -1,0 +1,166 @@
+
+@import "variable.less";
+@import "global_setting.less";
+@import url(https://fonts.googleapis.com/css?family=Amiri);
+@font-face {
+  font-family: Edwardian_Script;
+  src: url(../fonts/EdwardianScriptITC.ttf);
+		}
+
+body {
+  width: 100%;
+  background: @primaryColor;
+}
+header {
+  margin: 0 auto;
+}
+#shop {
+  width: 100%;
+  /*float: left;*/
+  /*margin: 2em 35% 1.5em;*/
+  margin: 2em auto 1.5em;
+  text-align: center;
+}
+#logo {
+  /*margin: 0.5em auto;*/
+  /*float: left;*/
+  display: inline-block;
+}
+#companyName {
+  /*float: left;*/
+  display: inline-block;
+  text-align: left;
+}
+h1 {
+  margin-left: .2em;
+  font-family: Edwardian_Script, sans-serif;
+  font-size: 2.3em;
+  .my-mixin-dark(); 
+  line-height: .9em;
+}
+nav {
+     width: 100%;
+     margin: 0 ;
+  ul {
+    text-align: center;
+    margin: 0 auto;
+    li {
+      list-style: none; 
+      display: inline-block;
+      a {
+        background: @secondaryColor;
+        color: @thirdColor;
+        text-decoration: none;
+        margin: 0 .6em;
+        padding: .1em 1em;
+        border: .1em solid #e1c674;
+        &:hover {
+          background: @thirdColor;
+          color: @secondaryColor;
+          border: .1em solid @secondaryColor;
+        };  // end nav ul li :hover  
+      };  // end nav ul li a
+    };   // end nav ul li
+  };   // end nav ul
+}   // end nav
+
+.active {
+  background: @thirdColor;
+  color: @secondaryColor;
+  border: .1em solid @secondaryColor;
+  cursor: default;
+}
+.active2 {
+  color: @thirdColor;
+  cursor: default;
+}
+
+form {
+  margin: 0;
+  font-family: 'Amiri', serif;
+}
+#registerForm {
+  margin: 2em auto;
+  width: 45%;
+  background: @thirdColor;
+  overflow: hidden;
+  color: @secondaryColor;
+}
+.formElements {
+  margin-top: 1.2em;
+}
+h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+label {
+  font-size: .85em;
+  margin: .5em .15em .5em 3em;
+}
+input {
+  margin: .15em 3em .5em 3.5em;
+  display: block;
+  width: 75%;
+  height: 2.8em;
+  &::-webkit-input-placeholder {
+    font-size: .8em;
+    color: @primaryColor;
+    padding: .2em 0 1em 1em;
+  };
+  &:-moz-placeholder {
+    font-size: 1em;
+    color: @primaryColor;
+    padding: .2em 0 1em 1em;
+  };
+  &[type=submit] {
+    background: @secondaryColor;
+    color: #fff;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    &:hover {
+      background: #fff;
+      color: @secondaryColor;
+    };  // end input[type=submit]:hover
+  };  // end input[type=submit]
+} // end input
+input[type=reset]:extend(input[type=submit]) {
+  background: @primaryColor;
+  &:hover {
+    background: #fff;
+    color: @secondaryColor;
+  };
+  
+}
+footer p {
+  font-size: .7em;
+  color: #444;
+}
+footer:extend(nav ul) {
+  li {
+    list-style:none;
+    display: inline-block;
+    a {
+      font-size: .9em;
+      font-style: italic;
+      margin-bottom: 1em;
+      color:  @secondaryColor;
+      text-decoration: none;
+      &:hover {
+        color: @thirdColor;
+      };  // end footer ul li a:hover
+      &::after {
+          content: " |";
+          margin:  0 1em 0 1.5em;
+          font-style: normal;
+          color: @thirdColor;
+          display: inline-block;
+      };  // end footer ul li::after
+    };  // end footer ul li a
+    &:last-child a::after  {
+       content: "";  
+    };  // end footer ul li:last-child::after 
+  };  // end footer ul li
+} // end footer extend

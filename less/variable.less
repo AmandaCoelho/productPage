@@ -1,0 +1,11 @@
+
+@primaryColor: #a17ced;
+@secondaryColor: #9d1515;
+@thirdColor: #eed14b;
+
+ .my-mixin-dark(@color: @secondaryColor) {
+     color: darken(@color, 15%);
+ }
+ .my-mixin-bgDarken(@color: @secondaryColor) {
+     background-color: darken(@color, 10%);
+ }

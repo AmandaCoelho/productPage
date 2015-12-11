@@ -1,0 +1,288 @@
+/* css reset */
+@import url(https://fonts.googleapis.com/css?family=Amiri);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Amiri', serif;
+}
+@font-face {
+  font-family: Edwardian_Script;
+  src: url(../fonts/EdwardianScriptITC.ttf);
+}
+body {
+  width: 100%;
+  background: #a17ced;
+}
+header {
+  margin: 0 auto;
+}
+#shop {
+  width: 100%;
+  /*float: left;*/
+  /*margin: 2em 35% 1.5em;*/
+  margin: 2em auto 1.5em;
+  text-align: center;
+}
+#logo {
+  /*margin: 0.5em auto;*/
+  /*float: left;*/
+  display: inline-block;
+}
+#companyName {
+  /*float: left;*/
+  display: inline-block;
+  text-align: left;
+}
+h1 {
+  margin-left: .2em;
+  font-family: Edwardian_Script, sans-serif;
+  font-size: 2.3em;
+  color: #5a0c0c;
+  line-height: .9em;
+}
+nav {
+  width: 100%;
+  margin: 0 ;
+}
+nav ul,
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  background: #9d1515;
+  color: #eed14b;
+  text-decoration: none;
+  margin: 0 .6em;
+  padding: .1em 1em;
+  border: .1em solid #e1c674;
+}
+nav ul li a:hover {
+  background: #eed14b;
+  color: #9d1515;
+  border: 0.1em solid #9d1515;
+}
+.active {
+  background: #eed14b;
+  color: #9d1515;
+  border: 0.1em solid #9d1515;
+  cursor: default;
+}
+.active2 {
+  color: #eed14b;
+  cursor: default;
+}
+form {
+  margin: 0;
+  font-family: 'Amiri', serif;
+}
+#registerForm {
+  margin: 2em auto;
+  width: 45%;
+  background: #eed14b;
+  overflow: hidden;
+  color: #9d1515;
+}
+.formElements {
+  margin-top: 1.2em;
+}
+h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+label {
+  font-size: .85em;
+  margin: .5em .15em .5em 3em;
+}
+input {
+  margin: .15em 3em .5em 3.5em;
+  display: block;
+  width: 75%;
+  height: 2.8em;
+}
+input::-webkit-input-placeholder {
+  font-size: .8em;
+  color: #a17ced;
+  padding: .2em 0 1em 1em;
+}
+input:-moz-placeholder {
+  font-size: 1em;
+  color: #a17ced;
+  padding: .2em 0 1em 1em;
+}
+input[type=submit],
+input[type=reset] {
+  background: #9d1515;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+input[type=submit]:hover {
+  background: #fff;
+  color: #9d1515;
+}
+input[type=reset] {
+  background: #a17ced;
+}
+input[type=reset]:hover {
+  background: #fff;
+  color: #9d1515;
+}
+footer p {
+  font-size: .7em;
+  color: #444;
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+}
+footer li a {
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 1em;
+  color: #9d1515;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #eed14b;
+}
+footer li a::after {
+  content: " |";
+  margin: 0 1em 0 1.5em;
+  font-style: normal;
+  color: #eed14b;
+  display: inline-block;
+}
+footer li:last-child a::after {
+  content: "";
+}
+/*# sourceMappingURL=newstyle.css.map */
+
+
+/*Page Wrapper*/
+.pageWrap{
+  margin: 3% auto;
+  max-width: 1200px;
+  background-color: #eed14b;
+  overflow: hidden;
+}
+
+.productArticle{
+  width:45%;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  /*margin: 0 auto;*/
+  text-align: center;
+  display:inline-block;
+  /*float: left;*/
+}
+
+.flower{
+  width:70%;
+}
+
+.addToCart{
+  background-color: #9d1515;
+  color:#eed14b;
+  width:20%;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+h2{
+  color: #9d1515;
+}
+
